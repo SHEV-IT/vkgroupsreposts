@@ -17,9 +17,18 @@ user_id <- ""  ## insert your id
 #Example of usage#
 ##################
 
-#response <- sapply(knu_name_code, pipeline)
-#response_2015 <- sapply(response, selectOnTime)
-#response_2015_source <- sapply(response_2015, getRepostSources)
+# response <- sapply(knu_name_code, pipeline)
+# response_2015 <- sapply(response, selectOnTime)
+# response_2015_source <- sapply(response_2015, getRepostSources)
+
+# or
+
+# knustud <- pipeline(knu_name_code$knustud)
+# knustud_2015 <- selectOnTime(knustud)
+# knustud_2015_2 <- selectOnTime(knustud, start = "20160401", end = "20160518") ## year|month|day 
+# sources <- getRepostSources(knustud_2015)
+# sources
+# print(paste0(sum(souces)," reposts out of ",nrow(knustud_2015)," posts: ",sum(souces)*100/nrow(knustud_2015),"%",collapse=""))
 
 ##################
 ##End of example##
